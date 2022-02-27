@@ -1,0 +1,214 @@
+2022-02-28 01:12:39.865  INFO 3524 --- [restartedMain] c.u.getLoan.GetLoanApplication           : Starting GetLoanApplication using Java 16.0.2 on C3yR with PID 3524 (C:\Innova\getLoan\target\classes started by halil in C:\Innova\getLoan)
+2022-02-28 01:12:39.881  INFO 3524 --- [restartedMain] c.u.getLoan.GetLoanApplication           : No active profile set, falling back to default profiles: default
+2022-02-28 01:12:40.044  INFO 3524 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-28 01:12:40.046  INFO 3524 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-28 01:12:42.974  INFO 3524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-28 01:12:43.150  INFO 3524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 153 ms. Found 2 JPA repository interfaces.
+2022-02-28 01:12:44.603  INFO 3524 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-02-28 01:12:44.672  INFO 3524 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-28 01:12:44.703  INFO 3524 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-28 01:12:45.750  INFO 3524 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-28 01:12:45.750  INFO 3524 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5698 ms
+2022-02-28 01:12:45.953  INFO 3524 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-28 01:12:46.156  INFO 3524 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-28 01:12:46.188  INFO 3524 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-02-28 01:12:46.550  INFO 3524 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-28 01:12:46.664  INFO 3524 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-28 01:12:46.998  INFO 3524 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-28 01:12:47.185  INFO 3524 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-28 01:12:48.342  INFO 3524 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-28 01:12:48.373  INFO 3524 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-28 01:12:49.404  WARN 3524 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-28 01:12:52.374  INFO 3524 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-28 01:12:52.390  INFO 3524 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-28 01:12:52.530  INFO 3524 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-02-28 01:12:52.577  INFO 3524 --- [restartedMain] c.u.getLoan.GetLoanApplication           : Started GetLoanApplication in 13.784 seconds (JVM running for 21.713)
+2022-02-28 01:13:01.189  INFO 3524 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-28 01:13:01.189  INFO 3524 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-28 01:13:01.192  INFO 3524 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-02-28 01:13:03.100  INFO 3524 --- [http-nio-8081-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 580 ms
+2022-02-28 01:15:51.195  WARN 3524 --- [http-nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.userForCredit.getLoan.ws.controllers.UserController.add(com.userForCredit.getLoan.business.requests.userRequests.CreateUserRequest): [Field error in object 'createUserRequest' on field 'nationalityNumber': rejected value []; codes [NotBlank.createUserRequest.nationalityNumber,NotBlank.nationalityNumber,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.nationalityNumber,nationalityNumber]; arguments []; default message [nationalityNumber]]; default message [Kullanıcı vatandaşlık numarası boş geçilemez!!!]] ]
+2022-02-28 01:17:33.834  INFO 3524 --- [http-nio-8081-exec-1] c.u.g.b.c.CreditCalculatorManager        : Calculated by : com.userForCredit.getLoan.business.concretes.CreditCalculatorManager
+CreditScore : 519.004032094895
+CreditAmount : 20000.0
+Salary : 10000.0
+2022-02-28 01:17:33.897  INFO 3524 --- [http-nio-8081-exec-1] c.u.g.core.utilities.sms.SmsService      : Sayın Halil Ülker krediniz onaylanmıştır.
+Kredi tutarınız : 20000.0
+Kredi onaylanma tarihi : Mon Feb 28 01:17:33 TRT 2022
+2022-02-28 01:18:47.088  INFO 3524 --- [http-nio-8081-exec-3] c.u.g.b.c.CreditCalculatorManager        : Calculated by : com.userForCredit.getLoan.business.concretes.CreditCalculatorManager
+CreditScore : 1259.811709440577
+CreditAmount : 40000.0
+Salary : 10000.0
+2022-02-28 01:18:47.088  INFO 3524 --- [http-nio-8081-exec-3] c.u.g.core.utilities.sms.SmsService      : Sayın Halil Ülker krediniz onaylanmıştır.
+Kredi tutarınız : 40000.0
+Kredi onaylanma tarihi : Mon Feb 28 01:18:47 TRT 2022
+2022-02-28 01:19:50.846  INFO 3524 --- [http-nio-8081-exec-4] c.u.g.b.c.CreditCalculatorManager        : Calculated by : com.userForCredit.getLoan.business.concretes.CreditCalculatorManager
+CreditScore : 778.2738151414205
+CreditAmount : 20000.0
+Salary : 17325.0
+2022-02-28 01:19:50.861  INFO 3524 --- [http-nio-8081-exec-4] c.u.g.core.utilities.sms.SmsService      : Sayın Bengisu Ülker krediniz onaylanmıştır.
+Kredi tutarınız : 20000.0
+Kredi onaylanma tarihi : Mon Feb 28 01:19:50 TRT 2022
+2022-02-28 01:20:16.604  INFO 3524 --- [http-nio-8081-exec-6] c.u.g.b.c.CreditCalculatorManager        : Calculated by : com.userForCredit.getLoan.business.concretes.CreditCalculatorManager
+CreditScore : 687.3091901545638
+CreditAmount : 20000.0
+Salary : 17325.0
+2022-02-28 01:20:16.612  INFO 3524 --- [http-nio-8081-exec-6] c.u.g.core.utilities.sms.SmsService      : Sayın Bengisu Ülker krediniz onaylanmıştır.
+Kredi tutarınız : 20000.0
+Kredi onaylanma tarihi : Mon Feb 28 01:20:16 TRT 2022
+2022-02-28 01:21:06.689  INFO 3524 --- [http-nio-8081-exec-1] c.u.g.b.c.CreditCalculatorManager        : Calculated by : com.userForCredit.getLoan.business.concretes.CreditCalculatorManager
+CreditScore : 1013.8256926172234
+CreditAmount : 69300.0
+Salary : 17325.0
+2022-02-28 01:21:06.698  INFO 3524 --- [http-nio-8081-exec-1] c.u.g.core.utilities.sms.SmsService      : Sayın Bengisu Ülker krediniz onaylanmıştır.
+Kredi tutarınız : 69300.0
+Kredi onaylanma tarihi : Mon Feb 28 01:21:06 TRT 2022
+2022-02-28 01:23:07.971  INFO 3524 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-28 01:23:07.971  INFO 3524 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-28 01:23:08.190  WARN 3524 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-02-28 01:23:08.190  INFO 3524 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-28 01:23:08.190  INFO 3524 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-28 01:27:50.075  INFO 6748 --- [main] c.u.getLoan.test.unit.TestUserEntity     : Starting TestUserEntity using Java 16.0.2 on C3yR with PID 6748 (started by halil in C:\Innova\getLoan)
+2022-02-28 01:27:50.078  INFO 6748 --- [main] c.u.getLoan.test.unit.TestUserEntity     : No active profile set, falling back to default profiles: default
+2022-02-28 01:27:52.828  INFO 6748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-28 01:27:53.019  INFO 6748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 168 ms. Found 2 JPA repository interfaces.
+2022-02-28 01:27:54.127  INFO 6748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-28 01:27:54.615  INFO 6748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-28 01:27:54.774  INFO 6748 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-28 01:27:54.911  INFO 6748 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-28 01:27:55.337  INFO 6748 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-28 01:27:55.725  INFO 6748 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-28 01:27:57.537  INFO 6748 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-28 01:27:57.558  INFO 6748 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-28 01:27:59.683  WARN 6748 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-28 01:28:04.596  INFO 6748 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-28 01:28:04.712  INFO 6748 --- [main] c.u.getLoan.test.unit.TestUserEntity     : Started TestUserEntity in 15.366 seconds (JVM running for 21.68)
+2022-02-28 01:28:07.272  INFO 6748 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-28 01:28:07.286  INFO 6748 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-28 01:28:07.295  WARN 6748 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2022-02-28 01:28:07.298 ERROR 6748 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-02-28 01:28:07.300  WARN 6748 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2022-02-28 01:28:07.302 ERROR 6748 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-02-28 01:28:07.305  WARN 6748 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution
+2022-02-28 01:28:07.340  INFO 6748 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-28 01:28:07.347  INFO 6748 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-28 01:28:26.330  INFO 1676 --- [main] c.u.getLoan.test.unit.TestCreditEntity   : Starting TestCreditEntity using Java 16.0.2 on C3yR with PID 1676 (started by halil in C:\Innova\getLoan)
+2022-02-28 01:28:26.337  INFO 1676 --- [main] c.u.getLoan.test.unit.TestCreditEntity   : No active profile set, falling back to default profiles: default
+2022-02-28 01:28:30.075  INFO 1676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-28 01:28:30.331  INFO 1676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 220 ms. Found 2 JPA repository interfaces.
+2022-02-28 01:28:32.401  INFO 1676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-28 01:28:33.341  INFO 1676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-28 01:28:33.599  INFO 1676 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-28 01:28:33.863  INFO 1676 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-28 01:28:34.561  INFO 1676 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-28 01:28:35.190  INFO 1676 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-28 01:28:38.002  INFO 1676 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-28 01:28:38.033  INFO 1676 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-28 01:28:41.056  WARN 1676 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-28 01:28:47.147  INFO 1676 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-28 01:28:47.293  INFO 1676 --- [main] c.u.getLoan.test.unit.TestCreditEntity   : Started TestCreditEntity in 21.841 seconds (JVM running for 25.549)
+2022-02-28 01:28:49.318  INFO 1676 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-28 01:28:49.320  INFO 1676 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-28 01:28:49.324  WARN 1676 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2022-02-28 01:28:49.325 ERROR 1676 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-02-28 01:28:49.328  WARN 1676 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2022-02-28 01:28:49.329 ERROR 1676 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-02-28 01:28:49.330  WARN 1676 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution
+2022-02-28 01:28:49.332  INFO 1676 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-28 01:28:49.338  INFO 1676 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-28 01:32:23.321  INFO 3924 --- [main] c.u.getLoan.test.unit.TestCreditEntity   : Starting TestCreditEntity using Java 16.0.2 on C3yR with PID 3924 (started by halil in C:\Innova\getLoan)
+2022-02-28 01:32:23.324  INFO 3924 --- [main] c.u.getLoan.test.unit.TestCreditEntity   : No active profile set, falling back to default profiles: default
+2022-02-28 01:32:26.188  INFO 3924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-28 01:32:26.465  INFO 3924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 249 ms. Found 2 JPA repository interfaces.
+2022-02-28 01:32:28.247  INFO 3924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-28 01:32:28.843  INFO 3924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-28 01:32:28.993  INFO 3924 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-28 01:32:29.152  INFO 3924 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-28 01:32:29.561  INFO 3924 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-28 01:32:29.932  INFO 3924 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-28 01:32:31.725  INFO 3924 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-28 01:32:31.754  INFO 3924 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-28 01:32:33.705  WARN 3924 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-28 01:32:39.139  INFO 3924 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-28 01:32:39.289  INFO 3924 --- [main] c.u.getLoan.test.unit.TestCreditEntity   : Started TestCreditEntity in 16.768 seconds (JVM running for 20.348)
+2022-02-28 01:32:40.793  INFO 3924 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-28 01:32:40.795  INFO 3924 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-28 01:32:40.798  WARN 3924 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2022-02-28 01:32:40.799 ERROR 3924 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-02-28 01:32:40.801  WARN 3924 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2022-02-28 01:32:40.801 ERROR 3924 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-02-28 01:32:40.802  WARN 3924 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution
+2022-02-28 01:32:40.803  INFO 3924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-28 01:32:40.806  INFO 3924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-28 01:33:13.059  INFO 5652 --- [restartedMain] c.u.getLoan.GetLoanApplication           : Starting GetLoanApplication using Java 16.0.2 on C3yR with PID 5652 (C:\Innova\getLoan\target\classes started by halil in C:\Innova\getLoan)
+2022-02-28 01:33:13.062  INFO 5652 --- [restartedMain] c.u.getLoan.GetLoanApplication           : No active profile set, falling back to default profiles: default
+2022-02-28 01:33:13.185  INFO 5652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-28 01:33:13.186  INFO 5652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-28 01:33:15.146  INFO 5652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-28 01:33:15.276  INFO 5652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113 ms. Found 2 JPA repository interfaces.
+2022-02-28 01:33:16.185  INFO 5652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-02-28 01:33:16.198  INFO 5652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-28 01:33:16.199  INFO 5652 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-28 01:33:16.406  INFO 5652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-28 01:33:16.408  INFO 5652 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3221 ms
+2022-02-28 01:33:16.562  INFO 5652 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-28 01:33:16.693  INFO 5652 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-28 01:33:16.706  INFO 5652 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-02-28 01:33:16.962  INFO 5652 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-28 01:33:17.041  INFO 5652 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-28 01:33:17.297  INFO 5652 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-28 01:33:17.467  INFO 5652 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-28 01:33:19.346  INFO 5652 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-28 01:33:19.370  INFO 5652 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-28 01:33:20.779  WARN 5652 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-28 01:33:23.690  INFO 5652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-28 01:33:23.690  INFO 5652 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-28 01:33:23.875  INFO 5652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-02-28 01:33:23.906  INFO 5652 --- [restartedMain] c.u.getLoan.GetLoanApplication           : Started GetLoanApplication in 11.814 seconds (JVM running for 14.575)
+2022-02-28 01:33:24.038  INFO 5652 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-28 01:33:24.044  INFO 5652 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-28 01:33:24.053  INFO 5652 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-02-28 01:33:24.875  INFO 5652 --- [http-nio-8081-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 419 ms
+2022-02-28 01:36:14.124  INFO 5652 --- [http-nio-8081-exec-5] c.u.g.b.c.CreditCalculatorManager        : Calculated by : com.userForCredit.getLoan.business.concretes.CreditCalculatorManager
+CreditScore : 1449.5718950771584
+CreditAmount : 0.0
+Salary : 0.0
+2022-02-28 01:37:05.197  INFO 5652 --- [http-nio-8081-exec-9] c.u.g.b.c.CreditCalculatorManager        : Calculated by : com.userForCredit.getLoan.business.concretes.CreditCalculatorManager
+CreditScore : 710.4372514941772
+CreditAmount : 10000.0
+Salary : 0.0
+2022-02-28 01:37:05.223  INFO 5652 --- [http-nio-8081-exec-9] c.u.g.core.utilities.sms.SmsService      : Sayın string string krediniz onaylanmıştır.
+Kredi tutarınız : 10000.0
+Kredi onaylanma tarihi : Mon Feb 28 01:37:05 TRT 2022
+2022-02-28 01:38:32.930  INFO 5652 --- [http-nio-8081-exec-4] c.u.g.b.c.CreditCalculatorManager        : Calculated by : com.userForCredit.getLoan.business.concretes.CreditCalculatorManager
+CreditScore : 1541.3241983512062
+CreditAmount : 0.0
+Salary : 0.0
+2022-02-28 01:38:52.289  INFO 5652 --- [http-nio-8081-exec-6] c.u.g.b.c.CreditCalculatorManager        : Calculated by : com.userForCredit.getLoan.business.concretes.CreditCalculatorManager
+CreditScore : 1976.9754723650915
+CreditAmount : 0.0
+Salary : 0.0
+2022-02-28 01:38:58.597  INFO 5652 --- [http-nio-8081-exec-8] c.u.g.b.c.CreditCalculatorManager        : Calculated by : com.userForCredit.getLoan.business.concretes.CreditCalculatorManager
+CreditScore : 1173.2791290049292
+CreditAmount : 0.0
+Salary : 0.0
+2022-02-28 01:39:00.803  INFO 5652 --- [http-nio-8081-exec-10] c.u.g.b.c.CreditCalculatorManager        : Calculated by : com.userForCredit.getLoan.business.concretes.CreditCalculatorManager
+CreditScore : 1942.661902910763
+CreditAmount : 0.0
+Salary : 0.0
+2022-02-28 01:39:01.873  INFO 5652 --- [http-nio-8081-exec-1] c.u.g.b.c.CreditCalculatorManager        : Calculated by : com.userForCredit.getLoan.business.concretes.CreditCalculatorManager
+CreditScore : 1386.1785981069079
+CreditAmount : 0.0
+Salary : 0.0
+2022-02-28 01:39:02.701  INFO 5652 --- [http-nio-8081-exec-2] c.u.g.b.c.CreditCalculatorManager        : Calculated by : com.userForCredit.getLoan.business.concretes.CreditCalculatorManager
+CreditScore : 664.6266377310848
+CreditAmount : 10000.0
+Salary : 0.0
+2022-02-28 01:39:02.716  INFO 5652 --- [http-nio-8081-exec-2] c.u.g.core.utilities.sms.SmsService      : Sayın string string krediniz onaylanmıştır.
+Kredi tutarınız : 10000.0
+Kredi onaylanma tarihi : Mon Feb 28 01:39:02 TRT 2022
+2022-02-28 01:40:05.284  INFO 5652 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-28 01:40:05.284  INFO 5652 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-28 01:40:05.503  WARN 5652 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-02-28 01:40:05.503  INFO 5652 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-28 01:40:05.503  INFO 5652 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
